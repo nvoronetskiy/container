@@ -35,6 +35,8 @@ target_compile_definitions(boost_container
   # PRIVATE BOOST_CONTAINER_SOURCE
 )
 
+target_compile_options(boost_container -fdeclspec)
+
 if(BUILD_SHARED_LIBS)
   target_compile_definitions(boost_container PUBLIC BOOST_CONTAINER_DYN_LINK)
 else()
